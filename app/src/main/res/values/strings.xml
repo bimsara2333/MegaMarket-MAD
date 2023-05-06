@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MAD</string>
+    <string name="btn1">LOGIN</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="userlogin">LOGIN</string>
+    <string name="forgotpw">Forgot Password ?</string>
+    <string name="sellermode">Switch to Seller Mode</string>
+    <string name="register">Register</string>
+    <string name="tc">"I am agree with the terms and conditions "</string>
+    <string name="reg">Register</string>
+    <string name="more_rev">View more reviews</string>
+    <string name="logout">LOGOUT</string>
+    <string name="edit">Edit Profile</string>
+    <string name="delete">Delete Profile</string>
+    <string name="editpro">Edit my profile</string>
+    <string name="myfav">Favourites</string>
+    <string name="wish">Wishlist</string>
+    <string name="delpro">Delete My Profile</string>
+</resources>
