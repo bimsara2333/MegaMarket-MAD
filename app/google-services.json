@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "766902325142",
+    "project_id": "megamarketcard",
+    "storage_bucket": "megamarketcard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766902325142:android:4e71e09581f5a124dc17b7",
+        "android_client_info": {
+          "package_name": "com.example.megamarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766902325142-8eluhqb8qepb8u2adcnkcl1ce6v31gpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpSV8cUtgV5ZlZaNPFAowltvsq7vxZaVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766902325142-8eluhqb8qepb8u2adcnkcl1ce6v31gpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

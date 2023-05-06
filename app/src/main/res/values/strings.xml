@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MegaMarket</string>
+    <string name="signup">Sign up</string>
+    <string name="Login">already have an account? Login</string>
+    <string name="Welcome">Welcome</string>
+    <string name="ADD">ADD</string>
+    <string name="Card">" Card Holder Name - lasithaheenkenda23@gmail.com"</string>
+    <string name="Delete">Delete Card</string>
+    <string name="Mega">Mega Market</string>
+    <string name="Discover">Discover Local Treasures with Us</string>
+    <string name="CODE">CODE</string>
+    <string name="Enter">Enter one time password sent on +94715906668</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Hello">Hello there, Welcome Back</string>
+    <string name="Seller">Seller Login</string>
+    <string name="Register">want to be a seller? Register.</string>
+
+    <string name="Update">Update Profile</string>
+    <string name="DeleteProfile">Delete Profile</string>
+
+</resources>
