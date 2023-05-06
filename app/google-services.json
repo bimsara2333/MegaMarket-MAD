@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294830104662",
+    "project_id": "dashitem",
+    "storage_bucket": "dashitem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294830104662:android:f515f7cf3dd42077f79bf7",
+        "android_client_info": {
+          "package_name": "com.example.dashitem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294830104662-m5vr7rmqnngp30shfu240ig03ke8qm10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpWoYHDNPNNXpPuUeJHqgiZjFhrcogF2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294830104662-m5vr7rmqnngp30shfu240ig03ke8qm10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
