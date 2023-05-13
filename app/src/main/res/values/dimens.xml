@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="logoutbtn">150dp</dimen>
-    <dimen name="logouth">42dp</dimen>
-    <dimen name="submitw">150dp</dimen>
-    <dimen name="submith">42dp</dimen>
-    <dimen name="cancelw">150dp</dimen>
-    <dimen name="cancelh">42dp</dimen>
-    <dimen name="loginw">320dp</dimen>
-    <dimen name="loginh">42dp</dimen>
-    <dimen name="registerw">320dp</dimen>
-    <dimen name="registerh">42dp</dimen>
-    <dimen name="savew">150dp</dimen>
-    <dimen name="saveh">42dp</dimen>
-    <dimen name="cancelw2">150dp</dimen>
-    <dimen name="cancelh2">42dp</dimen>
-    <dimen name="edit">15dp</dimen>
-    <dimen name="delete">15dp</dimen>
-    <dimen name="viewmore">15dp</dimen>
+    //footer icons
+    <dimen name ="Footer_icon_width">102.75dp </dimen>
+    <dimen name ="Footer_icon_height">58dp </dimen>
+
+    //icon toobar
+    <dimen name="Toolbar_width">411dp</dimen>
+    <dimen name="Toolbar_height">56dp</dimen>
+
+    //input box
+    <dimen name="Input_box_width">310dp</dimen>
+    <dimen name="Input_box_height">48dp</dimen>
+
 </resources>

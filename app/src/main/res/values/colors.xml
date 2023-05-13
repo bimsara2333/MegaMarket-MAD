@@ -7,7 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#C9C0BB</color>
-    <color name="ash">#4A4740</color>
-    <color name="darkred">#BE2F11</color>
+    <color name="Platinum_White">#E1E1E1</color>
+    <color name="cancel_red">#EC3C2F</color>
+    <color name="main_yellow">#F5B507</color>
+    <color name="update_pht_col">#D5EB57</color>
 </resources>
