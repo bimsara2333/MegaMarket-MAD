@@ -72,67 +72,44 @@
                     android:hint="Card Holder Name"
                     app:hintTextAppearance="@style/HintTextAppearance">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="text" />
+
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                     android:id="@+id/number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Card Number"
                     app:counterEnabled="true"
                     app:counterMaxLength="16"
-                    app:hintTextAppearance="@style/HintTextAppearance">
+                    app:hintTextAppearance="@style/HintTextAppearance"/>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="text" />
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                     android:id="@+id/cvv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Cvv"
                     app:counterEnabled="true"
                     app:counterMaxLength="3"
-                    app:hintTextAppearance="@style/HintTextAppearance"
+                    app:hintTextAppearance="@style/HintTextAppearance" />
 
-                    >
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                     android:id="@+id/date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Expire Date"
-                    app:hintTextAppearance="@style/HintTextAppearance"
+                    app:hintTextAppearance="@style/HintTextAppearance"/>
 
-                    >
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="date" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <Button
                     android:id="@+id/update"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="56dp"
                     android:background="@drawable/button"
                     android:text="Update"
                     android:textColor="#FDFDFD" />
