@@ -33,27 +33,29 @@ class SignUp : AppCompatActivity() {
 
         dbref = FirebaseDatabase.getInstance().getReference("Users")
 
-        binding.registerBtn.setOnClickListener {
-            val sellerName = binding.enteremail.text.toString()
-            val password = binding.enterpw.text.toString()
+        binding.regi.setOnClickListener {
+
+            val sellerName = binding.username1.text.toString()
+            val password = binding.password1.text.toString()
 
 
             if (sellerName.isNotEmpty() && password.isNotEmpty()) {
-                firebaseAuth.createUserWithEmailAndPassword(sellerName, password).addOnCompleteListener {
+
+                firebaseAuth.createUserWithEmailAndPassword(sellerName,password).addOnCompleteListener {
                     if (it.isSuccessful) {
                         Toast.makeText(this, "Google auth successs", Toast.LENGTH_LONG).show()
 
                         val userName = findViewById<EditText>(R.id.username)
                         val sName = userName.text.toString()
 
-                        val sellerId = dbref.push().key!!
-                        val buyer = SellerModel(sellerId, sName,sellerName)
+                        val userId=firebaseAuth.currentUser
+                        val buyer = SellerModel(userId.toString(), sName,sellerName)
 
 
-                        dbref.child(sellerId).setValue(buyer).addOnCompleteListener {
+                        dbref.child(userId.toString()).setValue(buyer).addOnCompleteListener {
                             Toast.makeText(this, "Data inserted Successfully", Toast.LENGTH_LONG).show()
                             val intent = Intent(this, SellerProfile::class.java)
-                            intent.putExtra("id", sellerId)
+                            intent.putExtra("id", userId)
                             startActivity(intent)
                         }.addOnFailureListener { err ->
                             Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()

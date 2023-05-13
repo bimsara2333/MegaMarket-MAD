@@ -12,7 +12,7 @@ class UpdateSellerProfile : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.UpdateSellerProfile)
+        //setContentView(R.layout.UpdateSellerProfile)
 
         val auth=FirebaseAuth.getInstance().currentUser
 
@@ -27,7 +27,7 @@ class UpdateSellerProfile : AppCompatActivity() {
 
 
 
-        saveBtn.setOnClickListener {
+       /* saveBtn.setOnClickListener {
 
             val Pass=pass.text.toString()
 
@@ -54,7 +54,7 @@ class UpdateSellerProfile : AppCompatActivity() {
                 }
             }
 
-        }
+        }*/
 
     }
 }

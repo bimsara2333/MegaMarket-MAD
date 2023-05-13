@@ -1,15 +1,8 @@
 package com.example.megamarket
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.Toast
-import com.example.megamarket.databinding.ActivitySignInBinding
-import com.google.firebase.auth.FirebaseAuth
+/*class seller_login : AppCompatActivity() {
 
-class seller_login : AppCompatActivity() {
-
-    private lateinit var binding: ActivitySignInBinding
+   /* private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,4 +36,4 @@ class seller_login : AppCompatActivity() {
 
 
     }
-}
+}*/

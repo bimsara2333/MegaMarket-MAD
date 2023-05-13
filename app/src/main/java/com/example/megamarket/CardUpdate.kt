@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.megamarket.Models.Card
 import com.example.megamarket.R
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.database.*
 
 class CardUpdate : AppCompatActivity() {
@@ -23,9 +24,9 @@ class CardUpdate : AppCompatActivity() {
 
         database = FirebaseDatabase.getInstance().reference
 
-        val name=findViewById<EditText>(R.id.name)
-        val number=findViewById<EditText>(R.id.number)
 
+        val number=findViewById<EditText>(R.id.number)
+        val cvv=findViewById<EditText>(R.id.cvv)
         val date=findViewById<EditText>(R.id.date)
         val updateBtn=findViewById<Button>(R.id.update)
 
@@ -36,15 +37,13 @@ class CardUpdate : AppCompatActivity() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val user = dataSnapshot.getValue(Card::class.java)
 
-                name.setText(user?.name).toString()
+
                 number.setText(user?.number).toString()
-
                 date.setText(user?.date).toString()
+                cvv.setText(user?.cvv).toString()
 
-                println(user?.name.toString())
-                println(user?.number.toString())
 
-                println(user?.date.toString())
+
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -53,23 +52,22 @@ class CardUpdate : AppCompatActivity() {
         })
 
         updateBtn.setOnClickListener{
-            val newName=name.text.toString()
+
             val newNumber=number.text.toString()
-
             val newDate=date.text.toString()
-
-            updateDetail(newName,newNumber,newDate)
+            val newCvv=cvv.text.toString()
+            updateDetail(newCvv,newNumber,newDate)
         }
 
     }
 
-    fun updateDetail(name: String, number:String, date:String){
+    fun updateDetail(cvv: String, number:String, date:String){
         val updates= mapOf<String,String>(
-            "name" to name,
+            "cvv" to cvv,
             "number" to number,
             "date" to date)
 
-        var id = intent.getStringExtra("cardID").toString()
+        var id = intent.getStringExtra("id").toString()
 
         database.child("Cards").child(id).updateChildren(updates)
             .addOnSuccessListener {
