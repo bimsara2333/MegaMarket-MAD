@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MegaMarket" parent="Theme.AppCompat.DayNight.NoActionBar">
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,13 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
-        <item name="android:windowContentTransitions">true</item>
-    </style>
-    <style name="HintTextAppearance" parent="TextAppearance.AppCompat.Small">
-        <item name="android:textSize">30sp</item>
-    </style>
-
-
 
 </resources>

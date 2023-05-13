@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="logo">150dp</dimen>
-    <dimen name="addbtn">152dp</dimen>
-    <dimen name="addbtnh">61dp</dimen>
-    <dimen name="cardh">372dp</dimen>
-    <dimen name="cardw">121dp</dimen>
-    <dimen name="intro">0dp</dimen>
-    <dimen name="earn">178dp</dimen>
-    <dimen name="earnw">48dp</dimen>
-    <dimen name="moneyw">230dp</dimen>
-    <dimen name="moneyww">230dp</dimen>
-    <dimen name="moneyh">106dp</dimen>
-    <dimen name="loginw">200dp</dimen>
+
 </resources>
