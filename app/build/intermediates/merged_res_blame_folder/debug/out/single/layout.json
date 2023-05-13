@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\item_item.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\item_item.xml"
+    },
+    {
+        "merged": "com.example.dashitem.app-mergeDebugResources-32:/layout/activity_updateorder.xml",
+        "source": "com.example.dashitem.app-main-35:/layout/activity_updateorder.xml"
+    },
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\activity_makeorder.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\activity_makeorder.xml"
+    },
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\activity_updateorder.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\activity_updateorder.xml"
+    },
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\activity_items_cart.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\activity_items_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\activity_deleteorder.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\activity_deleteorder.xml"
+    },
+    {
+        "merged": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-mergeDebugResources-32:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\nethi\\.gradle\\daemon\\7.5\\com.example.dashitem.app-main-35:\\layout\\activity_main.xml"
+    }
+]
