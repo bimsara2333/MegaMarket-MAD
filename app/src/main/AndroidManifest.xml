@@ -35,7 +35,7 @@
             android:exported="false" />
         <activity
             android:name=".SignUp"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".seller_login"
             android:exported="false" />
