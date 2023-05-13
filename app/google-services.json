@@ -1,33 +1,29 @@
 {
   "project_info": {
-    "project_number": "1026190951395",
-    "project_id": "kotlintest-8261e",
-    "storage_bucket": "kotlintest-8261e.appspot.com"
+
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1026190951395:android:26e47f6df72a7b372c96d6",
-        "android_client_info": {
-          "package_name": "com.example.testapp_for_assiment"
+
         }
       },
       "oauth_client": [
         {
-          "client_id": "1026190951395-loubr9jo06h1b5vj06bqm7adsdkm9m1l.apps.googleusercontent.com",
+
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDyHjgZAT3urrjUgokhl0AHMmt_SILw-qg"
+
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1026190951395-loubr9jo06h1b5vj06bqm7adsdkm9m1l.apps.googleusercontent.com",
+
               "client_type": 3
             }
           ]

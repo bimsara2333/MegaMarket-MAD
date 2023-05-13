@@ -8,36 +8,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.TestApp_For_Assiment"
-        tools:targetApi="31">
-        <activity
-            android:name=".Activities.Updateprduct"
-            android:exported="true" />
-        <activity
-            android:name=".Activities.viewproduct"
-            android:exported="true" />
-        <activity
-            android:name=".Activities.Allproducts"
-            android:exported="true" />
-        <activity
-            android:name=".Activities.addproduct"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activities.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
