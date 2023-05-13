@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".Activities.addproduct">
+    tools:context=".Activities.">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="457dp"
         android:layout_height="61dp"
-        app:title="Add new Product"
+        app:title="Update the Product"
         app:titleTextColor="@color/white"
-        app:titleMarginStart="160dp"
+        app:titleMarginStart="150dp"
         android:background="@color/darkred"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -75,7 +75,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Price"
+        android:hint="Item Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uqty" />
@@ -87,7 +87,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Item Description"
+        android:hint="Price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/udesc" />
@@ -97,7 +97,7 @@
         android:layout_width="165dp"
         android:layout_height="58dp"
         android:layout_marginTop="48dp"
-        android:text="Add Product"
+        android:text="Update"
         android:background="@drawable/button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

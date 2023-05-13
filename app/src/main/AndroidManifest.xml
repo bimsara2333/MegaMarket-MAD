@@ -12,13 +12,13 @@
         android:theme="@style/Theme.TestApp_For_Assiment"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.UpdateDataActivity"
+            android:name=".Activities.Updateprduct"
             android:exported="true" />
         <activity
-            android:name=".Activities.EmployeeDetailsActivity"
+            android:name=".Activities.viewproduct"
             android:exported="true" />
         <activity
-            android:name=".Activities.DataFetch"
+            android:name=".Activities.Allproducts"
             android:exported="true" />
         <activity
             android:name=".Activities.addproduct"

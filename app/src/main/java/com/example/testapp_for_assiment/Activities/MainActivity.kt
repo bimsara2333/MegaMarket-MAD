@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnFetchData.setOnClickListener{
-            val fetchData=Intent(this, DataFetch::class.java)
+            val fetchData=Intent(this, Allproducts::class.java)
             startActivity(fetchData)
         }
 

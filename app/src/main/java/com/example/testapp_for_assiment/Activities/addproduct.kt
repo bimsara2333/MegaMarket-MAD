@@ -1,10 +1,12 @@
 package com.example.testapp_for_assiment.Activities
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.testapp_for_assiment.Models.ProductModel
 import com.example.testapp_for_assiment.R
@@ -13,6 +15,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 
 class addproduct : AppCompatActivity() {
+    private lateinit var proimg:ImageView
     private lateinit var procat:EditText
     private lateinit var proname:EditText
     private lateinit var proqty:EditText
@@ -28,12 +31,13 @@ class addproduct : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.addproduct)
 
-        procat=findViewById(R.id.cat)
-        proname=findViewById(R.id.name)
-        proqty=findViewById(R.id.qty)
-        prodesc=findViewById(R.id.desc)
-        proprice=findViewById(R.id.price)
-        prosubmit=findViewById(R.id.btnsubmit)
+        proimg=findViewById(R.id.addimg)
+        procat=findViewById(R.id.ucat)
+        proname=findViewById(R.id.uname)
+        proqty=findViewById(R.id.uqty)
+        prodesc=findViewById(R.id.udesc)
+        proprice=findViewById(R.id.uprice)
+        prosubmit=findViewById(R.id.ubtnsubmit)
 
 
         dbRef=FirebaseDatabase.getInstance().getReference("Products")
@@ -72,6 +76,10 @@ class addproduct : AppCompatActivity() {
 
         dbRef.child(productID).setValue(product).addOnCompleteListener{
             Toast.makeText(this,"Data insert succesfully",Toast.LENGTH_LONG).show()
+
+            val intent4 = Intent(this, Allproducts::class.java)
+            startActivity(intent4)
+
         }.addOnFailureListener{ err->
             Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_LONG).show()
         }
