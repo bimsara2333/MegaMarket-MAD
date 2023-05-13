@@ -1,5 +1,6 @@
 package com.example.dashitem
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -24,33 +25,49 @@ class Makeorder : AppCompatActivity() {
             val itemcolor=binding.itemcolor.text.toString()
             val itemaddress=binding.itemaddress.text.toString()
 
+            val quantity = itemquantity.toDoubleOrNull()
+
             if(itemname.isEmpty()){
                 binding.itemname.error="Item name is required"
                 return@setOnClickListener
             }
-            if(itemsize.isEmpty()){
+            else if(itemsize.isEmpty()){
                 binding.itemsize.error="Item size is required"
                 return@setOnClickListener
             }
-            if(itemquantity.isEmpty()){
+
+            else if(itemquantity.isEmpty()){
                 binding.itemquantiy.error="Item quantity is required"
                 return@setOnClickListener
             }
-            if(itemcolor.isEmpty()){
+
+            else if(quantity == null){
+                binding.itemquantiy.error = "Please enter a numerical value"
+                return@setOnClickListener
+            }
+
+            else if(itemcolor.isEmpty()){
                 binding.itemcolor.error="Item color is required"
                 return@setOnClickListener
             }
-            if(itemaddress.isEmpty()){
+
+            else if(itemaddress.isEmpty()){
                 binding.itemaddress.error="Item Address is required"
                 return@setOnClickListener
             }
 
-
-
             database=FirebaseDatabase.getInstance().getReference("ItemsOrderDetails")
-            val Item=Item(itemname,itemsize,itemquantity,itemcolor,itemaddress)
+            val Item=Item("0", itemname,itemsize,itemquantity,itemcolor,itemaddress)
 
-            database.child(itemname).setValue(Item).addOnSuccessListener {
+            //  generate a new child node with a unique ID
+            val newItemRef = database.push()
+
+            // Get the ID of the new child node
+            val newItemId = newItemRef.key
+
+            Item.itemID = newItemId
+
+            newItemRef.setValue(Item).addOnSuccessListener {
 
                 binding.itemname.text.clear()
                 binding.itemsize.text.clear()
@@ -60,9 +77,9 @@ class Makeorder : AppCompatActivity() {
 
                 Toast.makeText(this,"ORDER SUCCESSFULLY CREATED",Toast.LENGTH_SHORT).show()
 
+                val intent = Intent(this, OrderDash::class.java)
+                this.startActivity(intent)
             }
-
-
 
         }
 

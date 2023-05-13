@@ -40,8 +40,5 @@ class OrderDash : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-
     }
 }

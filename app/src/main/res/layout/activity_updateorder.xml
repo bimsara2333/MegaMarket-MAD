@@ -26,17 +26,29 @@
 
     <Button
         android:id="@+id/additemsbuttonupdate"
-        android:layout_width="336dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/button"
         android:backgroundTint="#BE2F11"
         android:text="Update order"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#BE2F11"
+        android:text="Delete order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/additemsbuttonupdate"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/updateitemname"
@@ -59,7 +71,7 @@
         android:layout_width="331dp"
         android:layout_height="63dp"
         android:ems="10"
-        android:hint="please enter quantiy"
+        android:hint="Please enter Quantiy"
         android:inputType="textPersonName"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +86,7 @@
         android:layout_width="331dp"
         android:layout_height="63dp"
         android:ems="10"
-        android:hint="Please enter Item size"
+        android:hint="Please enter item Size"
         android:inputType="textPersonName"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +100,7 @@
         android:layout_width="331dp"
         android:layout_height="63dp"
         android:ems="10"
-        android:hint="please enter color"
+        android:hint="Please enter Color"
         android:inputType="textPersonName"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,7 +115,7 @@
         android:layout_width="331dp"
         android:layout_height="63dp"
         android:ems="10"
-        android:hint="please Enter the receiver address"
+        android:hint="Please enter the Receiver Address"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
