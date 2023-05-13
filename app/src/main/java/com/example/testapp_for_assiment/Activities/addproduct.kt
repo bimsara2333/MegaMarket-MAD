@@ -52,7 +52,9 @@ class addproduct : AppCompatActivity() {
         val category=procat.text.toString()
         val name=proname.text.toString()
         val quantity=proqty.text.toString()
-        
+        val description=prodesc.text.toString()
+        val price=proprice.text.toString()
+
         if(category.isEmpty()){
             //EmpName.error="Please enter name"
         }
