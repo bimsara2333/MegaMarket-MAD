@@ -35,7 +35,9 @@ class addproduct : AppCompatActivity() {
         procat=findViewById(R.id.ucat)
         proname=findViewById(R.id.uname)
         proqty=findViewById(R.id.uqty)
-       
+        prodesc=findViewById(R.id.udesc)
+        proprice=findViewById(R.id.uprice)
+        prosubmit=findViewById(R.id.ubtnsubmit)
 
 
         dbRef=FirebaseDatabase.getInstance().getReference("Products")
